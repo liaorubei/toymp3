@@ -1,0 +1,16 @@
+ToyMP3 Decoder
+
+Sinple MP3 decoder implemented in c#. This library is not so fantastic, but good for people who studying c# or bit-processing.
+
+I'll refactor all sorces as soon as I can. It's littel too dirty to read.
+
+You can build this like below:
+
+gmcs ToyMP3Demo.cs ToyMP3.cs ToyMP3Frame.cs ToyWaveOut.cs ToyMP3Decoder.cs ToyMP3Decoder_def.cs BitStream.cs GranuleInfo.cs
+
+Then launch like below:
+	mono ToyMP3Demo.exe <mp3file> <output> <channels>
+
+<channels> is stereo(2) or monoral(1) of mp3 file. You must tell stereo/monoral to ToyMP3Demo.exe by using this option. I know that it's silly. but it's just a software for demo.
+
+Demo spends 2~3 minutes to decode mp3 file.
